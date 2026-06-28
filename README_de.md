@@ -127,19 +127,10 @@ Die fertigen Gerber-Daten liegen unter
 einem Leiterplattenhersteller hochgeladen werden. Schaltplan und Layout zur
 Weiterentwicklung liegen im selben Ordner als KiCAD-Projekt.
 
-### 2. BIOS bauen (optional, nur bei Änderungen)
-Im Ordner `70_RON-BIOS-NASM_i-meic_WIN_Linux/`:
-- Windows: `run_win.bat`
-- Linux: `run_linux.sh`
+### 2. Pico-Firmware flashen
+`imeic_dos.uf2` auf den Raspberry Pi Pico kopieren (BOOTSEL-Modus).
 
-Erzeugt `BIOS.BIN` und daraus per COM2INC die `BIOS.INC`.
-
-### 3. Pico-Firmware bauen und flashen
-Projekt `10_i-meic-pico_V6/20_Lazarus_PICO_i-meic-pico_V6_DOS/20_i-meic-pico_V6_DOS/imeic_dos.lpi`
-in Lazarus öffnen, übersetzen und die erzeugte `imeic_dos.uf2` auf den
-Raspberry Pi Pico kopieren (BOOTSEL-Modus).
-
-### 4. Konsole starten und verbinden
+### 3. Konsole starten und verbinden
 `CONSOLE64` (im Ordner `60_FPC_Lazarus/20_LAZ_Console64_GUI64_Win64_Linux/bin/`)
 starten, den richtigen COM-Port und 921600 Baud einstellen, dann den i-meic
 mit Strom versorgen.

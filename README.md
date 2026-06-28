@@ -125,20 +125,11 @@ The finished Gerber data is located at
 directly to a PCB manufacturer. The schematic and layout for further
 development are in the same folder as a KiCAD project.
 
-### 2. Build the BIOS (optional, only when changing it)
-In the folder `70_RON-BIOS-NASM_i-meic_WIN_Linux/`:
-- Windows: `run_win.bat`
-- Linux: `run_linux.sh`
-
-This produces `BIOS.BIN` and, via COM2INC, the `BIOS.INC`.
-
-### 3. Build and flash the Pico firmware
+### 2. Build and flash the Pico firmware
 Open the project
-`10_i-meic-pico_V6/20_Lazarus_PICO_i-meic-pico_V6_DOS/20_i-meic-pico_V6_DOS/imeic_dos.lpi`
-in Lazarus, compile it and copy the resulting `imeic_dos.uf2` onto the
-Raspberry Pi Pico (BOOTSEL mode).
+`imeic_dos.uf2` onto the Raspberry Pi Pico (BOOTSEL mode).
 
-### 4. Start the console and connect
+### 3. Start the console and connect
 Start `CONSOLE64` (in the folder
 `60_FPC_Lazarus/20_LAZ_Console64_GUI64_Win64_Linux/bin/`), set the correct
 COM port and 921600 baud, then power up the i-meic.
