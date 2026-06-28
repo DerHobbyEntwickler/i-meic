@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <Title Value="imeic_dos"/>
+      <UseAppBundle Value="False"/>
+    </General>
+    <BuildModes Active="Raspberry Pi Pico">
+      <Item Name="Raspberry Pi Pico" Default="True"/>
+      <Item Name="Adafruit Feather RP2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wpfeather_rp2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="Adafruit ItsyBitzy RP2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wpitzybitzy_rp2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="Adafruit QTPY RP2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wpqtpy_rp2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="Pimoroni Tiny 2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wptiny_2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="SparkFun Pro Micro RP2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wppromicro_rp2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="SparkFun Thing Plus RP2040">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="bin/imeic_dos"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../units"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="armv6m"/>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="embedded"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2"/>
+              <UseLineInfoUnit Value="False"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Wpthingplus_rp2040
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <Units>
+      <Unit>
+        <Filename Value="imeic_dos.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="23"/>
+        <CursorPos X="17" Y="42"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../units/pico_gpio_c.pas"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="121"/>
+        <CursorPos X="88" Y="165"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SYSTEM.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos X="51" Y="56"/>
+        <UsageCount Value="91"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_Write_Char.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="3" Y="204"/>
+        <UsageCount Value="65"/>
+      </Unit>
+      <Unit>
+        <Filename Value="CONOUT.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1624"/>
+        <CursorPos X="9" Y="1644"/>
+        <UsageCount Value="74"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units/pico_uart_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_ILI9340_240x320.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="940"/>
+        <CursorPos X="12" Y="974"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units/pico_gpio_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="129"/>
+        <CursorPos X="83" Y="139"/>
+        <UsageCount Value="33"/>
+      </Unit>
+      <Unit>
+        <Filename Value="units/pico_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos X="42" Y="38"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ITP3_CLI_PRG.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="320"/>
+        <CursorPos X="27" Y="334"/>
+        <UsageCount Value="27"/>
+      </Unit>
+      <Unit>
+        <Filename Value="COLOR_256.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="184"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_01_PORTs.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="7" Y="72"/>
+        <UsageCount Value="57"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_02_ILI9486.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="148"/>
+        <CursorPos X="31" Y="153"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_03_HWU.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="COLOR_256_DWord.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="258"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_02_ILI9340.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="169"/>
+        <CursorPos X="23" Y="178"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="COLOR_256_Word.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="236"/>
+        <CursorPos X="8" Y="3"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_uart.pas"/>
+        <UnitName Value="UART_UNIT"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15"/>
+        <UsageCount Value="52"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UART_PRG.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="3"/>
+        <UsageCount Value="52"/>
+      </Unit>
+      <Unit>
+        <Filename Value="CPM86.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="834"/>
+        <CursorPos X="3" Y="2"/>
+        <UsageCount Value="55"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Geraete_Manager.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11" Y="2"/>
+        <UsageCount Value="64"/>
+      </Unit>
+      <Unit>
+        <Filename Value="CPU8088.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="33" Y="510"/>
+        <UsageCount Value="75"/>
+      </Unit>
+      <Unit>
+        <Filename Value="CPM86_IO.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="235"/>
+        <UsageCount Value="55"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SPI_W25Q64.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="535"/>
+        <CursorPos X="47" Y="546"/>
+        <UsageCount Value="36"/>
+      </Unit>
+      <Unit>
+        <Filename Value="lokaler_FLASH_Manager.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="3" Y="93"/>
+        <UsageCount Value="26"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SPI.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="2"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCDisplay.PAS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ITP3_PRG.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="22" Y="72"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SysPro.PAS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LOK_FLASH.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="17"/>
+        <UsageCount Value="202"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uart.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="14"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_00_unit.PAS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="8"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_04_Write_Char.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="115"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LCD_05_CONOUT.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1496"/>
+        <CursorPos Y="1589"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UART_unit.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="702"/>
+        <CursorPos X="26" Y="704"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SYS_PRG.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="26" Y="111"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="INIT_SPI_PORT.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="24" Y="45"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SYS_TICK_unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="35" Y="48"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="BIOS.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="21"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="DOS_IO.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="4" Y="600"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SysTick_U.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <CursorPos Y="4"/>
+        <UsageCount Value="40"/>
+      </Unit>
+      <Unit>
+        <Filename Value="System_U.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="148"/>
+        <CursorPos X="12" Y="95"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UART_U.PAS"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="700"/>
+        <CursorPos X="27" Y="713"/>
+        <UsageCount Value="97"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="DeviceManager_U.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="534"/>
+        <CursorPos X="18" Y="547"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LokFlash_U.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="70"/>
+      </Unit>
+      <Unit>
+        <Filename Value="InitSPI_U.PAS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="9"/>
+        <UsageCount Value="27"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SEK01.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SEK02.INC"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LokFlash__U.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="16" Y="50"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="DeviceManager_CPU8088.INC"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="453"/>
+        <CursorPos X="3" Y="2"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="DeviceManager_DOS_IO.INC"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="197"/>
+        <CursorPos X="36" Y="210"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LokFlash_Manager.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="147"/>
+        <CursorPos X="6" Y="194"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="LokFlash_SPI_W25Q64.INC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="329"/>
+        <CursorPos X="39" Y="83"/>
+        <UsageCount Value="59"/>
+      </Unit>
+      <Unit>
+        <Filename Value="BIOSAdmin_U.PAS"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="224"/>
+        <CursorPos X="34" Y="240"/>
+        <UsageCount Value="82"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="SysUtils_U.PAS"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="28"/>
+        <CursorPos X="62" Y="12"/>
+        <UsageCount Value="83"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GlobalVAR_U.PAS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="42" Y="70"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GlobalDEF_U.PAS"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="23"/>
+        <CursorPos X="14" Y="186"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="GlobalHW_U.PAS"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="12"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../units/pico_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="91"/>
+        <CursorPos X="17" Y="103"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ITP3_SRV_U.PAS"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="500"/>
+        <CursorPos X="25" Y="513"/>
+        <UsageCount Value="62"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../units/pico_uart_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="78" Y="152"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../units/pico_spi_c.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="154"/>
+        <CursorPos X="58" Y="140"/>
+        <UsageCount Value="12"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="DeviceManager_U.PAS"/>
+        <Caret Line="544" Column="16" TopLine="520"/>
+      </Position>
+      <Position>
+        <Filename Value="DeviceManager_U.PAS"/>
+        <Caret Line="547" Column="18" TopLine="534"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="51" Column="23" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="200" Column="37" TopLine="187"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="510" Column="30" TopLine="489"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="934" Column="25" TopLine="921"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="55" Column="25" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="267" Column="39" TopLine="254"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="103" Column="27" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="52" Column="19" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="214" Column="33" TopLine="201"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="594" Column="26" TopLine="573"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="53" Column="21" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="226" Column="35" TopLine="213"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="556" Column="28" TopLine="534"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="54" Column="25" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="187" Column="39" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="57" Column="13" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="153" Column="13" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="728" Column="20" TopLine="715"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="26" Column="28" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="766" Column="20" TopLine="753"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="168" Column="35" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="314" Column="29" TopLine="298"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="344" Column="29" TopLine="331"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="383" Column="29" TopLine="370"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="504" Column="27" TopLine="491"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="550" Column="27" TopLine="537"/>
+      </Position>
+      <Position>
+        <Filename Value="UART_U.PAS"/>
+        <Caret Line="588" Column="27" TopLine="575"/>
+      </Position>
+      <Position>
+        <Filename Value="GlobalHW_U.PAS"/>
+        <Caret Line="20" TopLine="10"/>
+      </Position>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="bin/imeic_dos"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../units"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <TargetProcessor Value="armv6m"/>
+      <TargetCPU Value="arm"/>
+      <TargetOS Value="embedded"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-Wpraspi_pico
+-godwarfsets
+-godwarfcpp
+-Xu"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>
