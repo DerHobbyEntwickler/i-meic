@@ -1,0 +1,6 @@
+
+nasm -f bin -o BIOS.BIN BIOS.ASM
+
+./COM2INC BIOS.BIN BIOS.INC Laenge_BIOS_Array BIOS_ARR
+
+

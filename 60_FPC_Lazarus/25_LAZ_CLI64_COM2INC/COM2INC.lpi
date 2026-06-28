@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="COM2INC.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="62"/>
+        <CursorPos X="22" Y="62"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="113" TopLine="95"/>
+      </Position1>
+      <Position2>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="114" TopLine="104"/>
+      </Position2>
+      <Position3>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="115" TopLine="104"/>
+      </Position3>
+      <Position4>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="118" TopLine="104"/>
+      </Position4>
+      <Position5>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="119" TopLine="104"/>
+      </Position5>
+      <Position6>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="120" TopLine="104"/>
+      </Position6>
+      <Position7>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="122" TopLine="107"/>
+      </Position7>
+      <Position8>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="113" TopLine="107"/>
+      </Position8>
+      <Position9>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="114" TopLine="107"/>
+      </Position9>
+      <Position10>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="115" TopLine="107"/>
+      </Position10>
+      <Position11>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="118" TopLine="107"/>
+      </Position11>
+      <Position12>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="119" TopLine="107"/>
+      </Position12>
+      <Position13>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="120" TopLine="107"/>
+      </Position13>
+      <Position14>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="101" TopLine="95"/>
+      </Position14>
+      <Position15>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="103" TopLine="95"/>
+      </Position15>
+      <Position16>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="106" TopLine="95"/>
+      </Position16>
+      <Position17>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="108" TopLine="95"/>
+      </Position17>
+      <Position18>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="110" TopLine="95"/>
+      </Position18>
+      <Position19>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="111" TopLine="95"/>
+      </Position19>
+      <Position20>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="113" TopLine="95"/>
+      </Position20>
+      <Position21>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="101" TopLine="95"/>
+      </Position21>
+      <Position22>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="103" TopLine="95"/>
+      </Position22>
+      <Position23>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="106" TopLine="95"/>
+      </Position23>
+      <Position24>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="108" TopLine="95"/>
+      </Position24>
+      <Position25>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="110" TopLine="95"/>
+      </Position25>
+      <Position26>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="111" TopLine="95"/>
+      </Position26>
+      <Position27>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="113" TopLine="95"/>
+      </Position27>
+      <Position28>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="115" TopLine="101"/>
+      </Position28>
+      <Position29>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="101" TopLine="101"/>
+      </Position29>
+      <Position30>
+        <Filename Value="COM2INC.lpr"/>
+        <Caret Line="181" Column="30" TopLine="165"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="COM2INC"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <RunWithoutDebug Value="True"/>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

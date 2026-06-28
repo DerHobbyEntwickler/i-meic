@@ -1,0 +1,6 @@
+echo on
+
+COM2INC.exe CPD5.COM CPD5.INC Laenge_BIOS_Array BIOS_ARR CLEAR
+
+
+

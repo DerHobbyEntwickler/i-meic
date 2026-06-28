@@ -1,0 +1,31 @@
+
+
+
+; INT 1D Video Initialization Parameter Table Vector (CRTC)
+;
+; https://stanislavs.org/helppc/6845.html
+;----------------------------------------------------------------------------;
+; CRTC STRUC
+H_TC    DB  038H   ; 00 - Horiz. total characters
+H_CL    DB  028H   ; 01 - Horiz. displayed characters per line
+H_SP    DB  02DH   ; 02 - Horiz. synch position
+H_SW    DB  00AH   ; 03 - Horiz. synch width in characters
+V_TL    DB  01FH   ; 04 - Vert. total lines
+V_SL    DB  006H   ; 05 - Vert. total adjust (scan lines)
+V_DR    DB  019H   ; 06 - Vert. displayed rows
+V_SP    DB  01CH   ; 07 - Vert. synch position (character rows)
+IL      DB  002H   ; 08 - Interlace mode
+MSL     DB  007H   ; 09 - Maximum scan line address
+CSL     DB  006H   ; 0A - Cursor start (scan line)
+CEL     DB  007H   ; 0B - Cursor end (scan line)
+SA_H    DB  000H   ; 0C - Start address (MSB)
+SA_L    DB  000H   ; 0D - Start address (LSB)
+CA_H    DB  000H   ; 0E - Cursor address (MSB) (read/write)
+CA_L    DB  000H   ; 0F - Cursor address (LSB) (read/write)
+; CRTC ENDS
+
+    DB 00, 00, 00, 00, 00, 00, 00, 00
+    DB 00, 00, 00, 00, 00, 00, 00, 00
+    DB 00, 00, 00, 00, 00, 00, 00, 00
+    DB 00, 00, 00, 00, 00, 00, 00, 00
+
