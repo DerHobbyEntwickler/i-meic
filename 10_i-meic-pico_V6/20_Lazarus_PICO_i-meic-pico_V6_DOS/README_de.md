@@ -29,9 +29,9 @@ Der Name setzt sich aus zwei Teilen zusammen:
 ## Aufgaben der Firmware
 
 - **Hardware-Initialisierung** des Pico (GPIO, UART, SPI, Timer)
-- **Laden des BIOS** (`BIOS.INC` → Array `BIOS_ARR`) in den SRAM des 8086
+- **Laden des BIOS** (`BIOS.INC` → Array `BIOS_ARR`) in den SRAM des 8088
   (Segment `F800:0000`)
-- **Takten der 8086-CPU** und Steuern von RESET, RAM-Enable usw.
+- **Takten der 8088-CPU** und Steuern von RESET, RAM-Enable usw.
 - **Bedienen aller I/O-Anforderungen (IORQ)** der CPU: Konsole, Laufwerke,
   Uhr, Sound, Maus … — hier ausgelegt für **DOS**
 - **Serielle Kommunikation** mit dem Host (Standard: **921600 Baud**)
@@ -43,16 +43,16 @@ Der Name setzt sich aus zwei Teilen zusammen:
 |----------------|-----------|
 | `20_i-meic-pico_V6_DOS/imeic_dos.lpi` | **Lazarus-Projektdatei** – hiermit das Projekt öffnen. |
 | `20_i-meic-pico_V6_DOS/imeic_dos.lpr` | Hauptprogramm (Startablauf der Firmware). |
-| `20_i-meic-pico_V6_DOS/GlobalHW_U.PAS` | Hardware-Schicht: GPIO, UART, SPI, Daten-/Adressbus des 8086. |
+| `20_i-meic-pico_V6_DOS/GlobalHW_U.PAS` | Hardware-Schicht: GPIO, UART, SPI, Daten-/Adressbus des 8088. |
 | `20_i-meic-pico_V6_DOS/GlobalDEF_U.PAS` | Globale Definitionen, Gerätekonstanten, Datenstrukturen. |
 | `20_i-meic-pico_V6_DOS/BIOSAdmin_U.PAS` | Verwaltung/Einbinden des BIOS und des BIOS-Flash. |
-| `20_i-meic-pico_V6_DOS/DeviceManager_U.PAS` | Geräteverwaltung; bedient die I/O-Funktionen für die 8086-CPU. |
+| `20_i-meic-pico_V6_DOS/DeviceManager_U.PAS` | Geräteverwaltung; bedient die I/O-Funktionen für die 8088-CPU. |
 | `20_i-meic-pico_V6_DOS/DeviceManager_DOS_IO.INC` | I/O-Routinen speziell für **DOS**. |
-| `20_i-meic-pico_V6_DOS/DeviceManager_CPU8088.INC` | CPU-spezifische Routinen (8086/8088-Bustakt). |
+| `20_i-meic-pico_V6_DOS/DeviceManager_CPU8088.INC` | CPU-spezifische Routinen (8088-Bustakt). |
 | `20_i-meic-pico_V6_DOS/ITP3_SRV_U.PAS` | Server für den ITP3-Erweiterungsbus. |
 | `20_i-meic-pico_V6_DOS/UART_U.PAS` | Serielle Schnittstelle. |
 | `20_i-meic-pico_V6_DOS/SysTick_U.PAS`, `SysUtils_U.PAS` | Zeit-/Hilfsfunktionen. |
-| `20_i-meic-pico_V6_DOS/BIOS.INC` | **Eingebettetes 8086-BIOS** als Byte-Array (aus `70_RON-BIOS-NASM…` erzeugt). |
+| `20_i-meic-pico_V6_DOS/BIOS.INC` | **Eingebettetes 8088-BIOS** als Byte-Array (aus `70_RON-BIOS-NASM…` erzeugt). |
 | `20_i-meic-pico_V6_DOS/bin/imeic_dos.uf2` | **Fertige Firmware** zum Flashen des Pico. Außerdem `.elf`, `.hex`, `.bin`. |
 | `units/` | **Bibliotheken für den ARM-Cross-Compiler** – siehe nächster Abschnitt. |
 

@@ -1,7 +1,7 @@
 # 20_Lazarus_PICO_i-meic-pico_V6_DOS — Pico firmware (I/O interface for DOS)
 
 Source of the **firmware for the Raspberry Pi Pico (RP2040)** on the i-meic
-board. The firmware turns the 8086 core into a working computer by taking
+board. The firmware turns the 8088 core into a working computer by taking
 over all of its input/output.
 
 *(Deutsche Version: [README_de.md](README_de.md))*
@@ -28,8 +28,8 @@ The name consists of two parts:
 
 - **Hardware initialisation** of the Pico (GPIO, UART, SPI, timer)
 - **Loading the BIOS** (`BIOS.INC` → array `BIOS_ARR`) into the SRAM of the
-  8086 (segment `F800:0000`)
-- **Clocking the 8086 CPU** and controlling RESET, RAM enable, etc.
+  8088 (segment `F800:0000`)
+- **Clocking the 8088 CPU** and controlling RESET, RAM enable, etc.
 - **Servicing all I/O requests (IORQ)** of the CPU: console, drives, clock,
   sound, mouse … — here built for **DOS**
 - **Serial communication** with the host (default: **921600 baud**)
@@ -41,12 +41,12 @@ The name consists of two parts:
 |---------------|---------|
 | `20_i-meic-pico_V6_DOS/imeic_dos.lpi` | **Lazarus project file** – open the project with this. |
 | `20_i-meic-pico_V6_DOS/imeic_dos.lpr` | Main program (firmware startup sequence). |
-| `20_i-meic-pico_V6_DOS/GlobalHW_U.PAS` | Hardware layer: GPIO, UART, SPI, data/address bus of the 8086. |
+| `20_i-meic-pico_V6_DOS/GlobalHW_U.PAS` | Hardware layer: GPIO, UART, SPI, data/address bus of the 8088. |
 | `20_i-meic-pico_V6_DOS/GlobalDEF_U.PAS` | Global definitions, device constants, data structures. |
 | `20_i-meic-pico_V6_DOS/BIOSAdmin_U.PAS` | Management/embedding of the BIOS and the BIOS flash. |
-| `20_i-meic-pico_V6_DOS/DeviceManager_U.PAS` | Device management; services the I/O functions for the 8086 CPU. |
+| `20_i-meic-pico_V6_DOS/DeviceManager_U.PAS` | Device management; services the I/O functions for the 8088 CPU. |
 | `20_i-meic-pico_V6_DOS/DeviceManager_DOS_IO.INC` | I/O routines specifically for **DOS**. |
-| `20_i-meic-pico_V6_DOS/DeviceManager_CPU8088.INC` | CPU-specific routines (8086/8088 bus timing). |
+| `20_i-meic-pico_V6_DOS/DeviceManager_CPU8088.INC` | CPU-specific routines (8088 bus timing). |
 | `20_i-meic-pico_V6_DOS/ITP3_SRV_U.PAS` | Server for the ITP3 expansion bus. |
 | `20_i-meic-pico_V6_DOS/UART_U.PAS` | Serial interface. |
 | `20_i-meic-pico_V6_DOS/SysTick_U.PAS`, `SysUtils_U.PAS` | Time/utility functions. |

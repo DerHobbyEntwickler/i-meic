@@ -38,5 +38,5 @@ project-specific parts to load correctly, keep the `board-library/` folder as
 a library path relative to the project.
 
 > **TODO (to be added):** A bill of materials (BOM), an assembly plan and the
-> exact pin mapping Pico ↔ 8086 ↔ SRAM would make rebuilding considerably
+> exact pin mapping Pico ↔ 8088 ↔ SRAM would make rebuilding considerably
 > easier.

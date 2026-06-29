@@ -35,7 +35,7 @@ Die Hardware aus `10_KiCAD` und die Firmware aus
 
 1. Die Leiterplatte wird nach den KiCAD-/Gerber-Daten gefertigt und bestückt.
 2. Die Firmware wird übersetzt und auf den Raspberry Pi Pico geflasht.
-3. Der Pico lädt beim Start das BIOS in den SRAM, taktet die 8086-CPU und
+3. Der Pico lädt beim Start das BIOS in den SRAM, taktet die 8088-CPU und
    bedient deren gesamte I/O.
 
 Bildschirm, Tastatur und Laufwerke werden über die serielle Schnittstelle

@@ -33,7 +33,7 @@ The hardware from `10_KiCAD` and the firmware from
 
 1. The PCB is manufactured according to the KiCAD/Gerber data and populated.
 2. The firmware is compiled and flashed onto the Raspberry Pi Pico.
-3. At startup the Pico loads the BIOS into the SRAM, clocks the 8086 CPU and
+3. At startup the Pico loads the BIOS into the SRAM, clocks the 8088 CPU and
    services all of its I/O.
 
 Screen, keyboard and drives are provided over the serial interface by the

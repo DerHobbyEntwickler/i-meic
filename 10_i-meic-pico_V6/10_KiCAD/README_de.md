@@ -40,4 +40,4 @@ projekteigenen Bauteile korrekt geladen werden, sollte der Ordner
 `board-library/` als Bibliothekspfad relativ zum Projekt erhalten bleiben.
 
 > **TODO (zu ergänzen):** Stückliste (BOM), Bestückungsplan und die genaue
-> Pinbelegung Pico ↔ 8086 ↔ SRAM erleichtern den Nachbau erheblich.
+> Pinbelegung Pico ↔ 8088 ↔ SRAM erleichtern den Nachbau erheblich.
