@@ -50,8 +50,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="1159"/>
-        <CursorPos X="41" Y="1167"/>
+        <TopLine Value="496"/>
+        <CursorPos X="34" Y="506"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -70,8 +70,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="207"/>
-        <CursorPos Y="224"/>
+        <TopLine Value="58"/>
+        <CursorPos X="31" Y="215"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -156,8 +156,8 @@
         <Filename Value="windos.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="259"/>
-        <CursorPos X="35" Y="270"/>
+        <TopLine Value="59"/>
+        <CursorPos X="10" Y="80"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit15>
@@ -200,7 +200,7 @@
         <Filename Value="Codepage437.INC"/>
         <EditorIndex Value="6"/>
         <CursorPos Y="3"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
       </Unit21>
       <Unit22>
@@ -223,14 +223,14 @@
         <UnitName Value="Language_U"/>
         <EditorIndex Value="4"/>
         <CursorPos X="16" Y="27"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit24>
       <Unit25>
         <Filename Value="language_de.INC"/>
         <EditorIndex Value="2"/>
         <CursorPos Y="48"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit25>
       <Unit26>
@@ -251,13 +251,13 @@
       <Unit28>
         <Filename Value="language_en.INC"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="43"/>
+        <TopLine Value="98"/>
         <CursorPos X="35" Y="65"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit28>
     </Units>
-    <JumpHistory Count="27" HistoryIndex="26">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="Unit_CONS.pas"/>
         <Caret Line="482" Column="4" TopLine="458"/>
@@ -366,6 +366,10 @@
         <Filename Value="MainUnit.pas"/>
         <Caret Line="1166" Column="46" TopLine="1153"/>
       </Position27>
+      <Position28>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="1190" Column="46" TopLine="1177"/>
+      </Position28>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

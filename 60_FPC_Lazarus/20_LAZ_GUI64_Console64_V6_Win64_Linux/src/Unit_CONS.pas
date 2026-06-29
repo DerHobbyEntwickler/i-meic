@@ -212,14 +212,9 @@ begin
   set_Focus_on_CONOUT:=true;
 
 
-
-{$IFDEF MSWINDOWS}
-  Image_Graf_Mon1.Canvas.Font.Name:='Cascadia Mono';
-  Image_Graf_Mon2.Canvas.Font.Name:='Cascadia Mono';
-{$ELSE}
-  Image_Graf_Mon1.Canvas.Font.Name:='Cascadia Mono';
-  Image_Graf_Mon2.Canvas.Font.Name:='Cascadia Mono';
-{$ENDIF}
+  // Uebernahme des Font Namen
+  Image_Graf_Mon1.Canvas.Font.Name:=GV_Font_Name;
+  Image_Graf_Mon2.Canvas.Font.Name:=GV_Font_Name;
 
 
 

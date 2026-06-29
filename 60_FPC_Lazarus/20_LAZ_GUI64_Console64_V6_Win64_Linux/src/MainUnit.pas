@@ -502,6 +502,11 @@ begin
 
 
   // PRINT
+  If not DirectoryExists(PRINT_File_Folder) then begin
+    CreateDir(PRINT_File_Folder);
+  end;
+
+
   PRINT_File := TMemoryStream.Create;
 
   DISK_MONITOR_OFF;
@@ -535,6 +540,7 @@ begin
   ComboBox_Font_Namen.ItemIndex:=find_Font_Name;
 
 
+
   ListBox_Messages_Clear;
 
   Video_RAM_File:=TStringList.Create;
@@ -550,6 +556,8 @@ begin
 
 
   change_language_in_Form_Console;
+
+
 
 end; { procedure TForm_Console.FormCreate }
 
@@ -599,7 +607,16 @@ begin
   // IniFile ListBox_Messages
 
   DEVICE_VECTOR_String := FIni.ReadString('CONOUT', 'DEVICE_VECTOR', '11111100');
-  GV_Font_Name := FIni.ReadString('CONOUT', 'FONT_NAME', 'Courier New');
+
+
+{$IFDEF MSWINDOWS}
+   GV_Font_Name := FIni.ReadString('CONOUT', 'FONT_NAME', 'Cascadia Mono');
+{$ELSE}
+  GV_Font_Name := FIni.ReadString('CONOUT', 'FONT_NAME', 'DejaVu Sans Mono');
+{$ENDIF}
+
+
+
 
 
   // Language, Sprache
@@ -665,14 +682,21 @@ begin
 
     for FN_Counter:=0 to ComboBox_Font_Namen.Items.Count-1 do begin
 
-      if ComboBox_Font_Namen.Items[FN_Counter]='Lucida Console' then begin
-        FN_ItemIndex:=FN_Counter;
-      end; { if ComboBox_Font_Namen.Items[FN_Counter]=GV_Font_Name then }
+      {$IFDEF MSWINDOWS}
+         if ComboBox_Font_Namen.Items[FN_Counter]='Cascadia Mono' then begin
+           FN_ItemIndex:=FN_Counter;
+           GV_Font_Name:='Cascadia Mono';
+         end; { if ComboBox_Font_Namen.Items[FN_Counter]=GV_Font_Name then }
+      {$ELSE}
+        if ComboBox_Font_Namen.Items[FN_Counter]='DejaVu Sans Mono' then begin
+          FN_ItemIndex:=FN_Counter;
+          GV_Font_Name:='DejaVu Sans Mono';
+        end; { if ComboBox_Font_Namen.Items[FN_Counter]=GV_Font_Name then }
+      {$ENDIF}
 
     end; { for FN_Counter:=0 to ComboBox_Font_Namen.Items.Count-1 do }
 
   end; { if FN_ItemIndex=-1 then }
-
 
   Result:=FN_ItemIndex;
 

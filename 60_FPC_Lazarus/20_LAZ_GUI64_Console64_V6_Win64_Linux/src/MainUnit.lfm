@@ -13,7 +13,7 @@ object Form_Console: TForm_Console
   OnKeyDown = FormKeyDown
   OnResize = FormResize
   OnShow = FormShow
-  LCLVersion = '3.0.0.3'
+  LCLVersion = '3.8.0.0'
   object Panel1: TPanel
     Left = 0
     Height = 80
@@ -26,9 +26,9 @@ object Form_Console: TForm_Console
     TabOrder = 0
     object Label1: TLabel
       Left = 8
-      Height = 22
+      Height = 18
       Top = 11
-      Width = 33
+      Width = 31
       Caption = 'Port:'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -41,9 +41,9 @@ object Form_Console: TForm_Console
     end
     object Label2: TLabel
       Left = 8
-      Height = 22
+      Height = 18
       Top = 46
-      Width = 67
+      Width = 64
       Caption = 'Baudrate:'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -250,7 +250,7 @@ object Form_Console: TForm_Console
     end
     object ComboBoxPort: TComboBox
       Left = 56
-      Height = 30
+      Height = 24
       Top = 9
       Width = 400
       Font.CharSet = ANSI_CHARSET
@@ -259,14 +259,14 @@ object Form_Console: TForm_Console
       Font.Name = 'Tahoma'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
-      ItemHeight = 0
+      ItemHeight = 16
       ParentFont = False
       TabOrder = 0
       Text = 'ComboBoxPort'
     end
     object ComboBoxBauds: TComboBox
       Left = 88
-      Height = 30
+      Height = 24
       Top = 44
       Width = 168
       Font.CharSet = ANSI_CHARSET
@@ -275,7 +275,7 @@ object Form_Console: TForm_Console
       Font.Name = 'Tahoma'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
-      ItemHeight = 0
+      ItemHeight = 16
       ParentFont = False
       TabOrder = 1
       Text = 'ComboBoxBaudRate'
@@ -354,7 +354,6 @@ object Form_Console: TForm_Console
     ParentFont = False
     Style = lbOwnerDrawFixed
     TabOrder = 2
-    TopIndex = -1
     OnDrawItem = ListBox_MessagesDrawItem
   end
   object Panel3: TPanel
@@ -372,9 +371,9 @@ object Form_Console: TForm_Console
     TabOrder = 3
     object CheckBox_GV_D7_VIDEO: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 2
-      Width = 124
+      Width = 111
       Caption = 'Monitor (VIDEO)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -388,9 +387,9 @@ object Form_Console: TForm_Console
     end
     object Label4: TLabel
       Left = 4
-      Height = 81
+      Height = 75
       Top = 16
-      Width = 70
+      Width = 67
       Caption = 'Geräte-'#13#10'verwal-'#13#10'tung'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -404,9 +403,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_D6_CONIN: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 18
-      Width = 128
+      Width = 117
       Caption = 'Tastatur (CONIN)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -420,9 +419,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_D5_LIST: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 34
-      Width = 121
+      Width = 111
       Caption = 'Drucker (PRINT)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -436,9 +435,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_D4_SOUND: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 50
-      Width = 118
+      Width = 105
       Caption = 'Audio (SOUND)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -452,9 +451,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_FDD: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 66
-      Width = 103
+      Width = 92
       Caption = 'Floppy (FDD)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -468,9 +467,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_D2_HDD: TCheckBox
       Left = 88
-      Height = 23
+      Height = 20
       Top = 82
-      Width = 125
+      Width = 112
       Caption = 'Festplatte (HDD)'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -484,9 +483,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV_D1_RTC: TCheckBox
       Left = 88
-      Height = 23
+      Height = 21
       Top = 98
-      Width = 81
+      Width = 74
       Caption = 'Uhr (RTC)'
       Font.CharSet = ANSI_CHARSET
       Font.Height = -13
@@ -498,9 +497,9 @@ object Form_Console: TForm_Console
     end
     object CheckBox_GV2_D7_Mouse: TCheckBox
       Left = 232
-      Height = 23
+      Height = 21
       Top = 2
-      Width = 106
+      Width = 102
       Caption = 'Mouse (Maus)'
       Font.CharSet = ANSI_CHARSET
       Font.Height = -13
@@ -515,24 +514,24 @@ object Form_Console: TForm_Console
     Height = 200
     Top = 200
     Width = 492
-    ActivePage = TabSheet_Language
+    ActivePage = TabSheet_Settings
     Align = alTop
     ParentFont = False
-    TabIndex = 3
+    TabIndex = 2
     TabOrder = 4
     object TabSheet_Monitor: TTabSheet
       Caption = 'Monitor'
-      ClientHeight = 170
-      ClientWidth = 482
+      ClientHeight = 172
+      ClientWidth = 484
       ParentFont = False
       object Panel6: TPanel
         Left = 0
         Height = 104
         Top = 0
-        Width = 482
+        Width = 484
         Align = alTop
         ClientHeight = 104
-        ClientWidth = 482
+        ClientWidth = 484
         ParentFont = False
         TabOrder = 0
         object Image_DISK_MONITOR: TImage
@@ -1019,7 +1018,7 @@ object Form_Console: TForm_Console
         end
         object Label_DISK: TLabel
           Left = 293
-          Height = 23
+          Height = 22
           Top = 29
           Width = 11
           Alignment = taCenter
@@ -1035,7 +1034,7 @@ object Form_Console: TForm_Console
         end
         object Label_LBA: TLabel
           Left = 400
-          Height = 23
+          Height = 22
           Top = 29
           Width = 44
           Alignment = taCenter
@@ -1200,17 +1199,17 @@ object Form_Console: TForm_Console
     end
     object TabSheet_Drive: TTabSheet
       Caption = 'Laufwerke'
-      ClientHeight = 170
-      ClientWidth = 482
+      ClientHeight = 172
+      ClientWidth = 484
       ParentFont = False
       object Panel_DISK: TPanel
         Left = 0
-        Height = 170
+        Height = 172
         Top = 0
-        Width = 482
+        Width = 484
         Align = alClient
-        ClientHeight = 170
-        ClientWidth = 482
+        ClientHeight = 172
+        ClientWidth = 484
         ParentColor = False
         ParentFont = False
         TabOrder = 0
@@ -1218,10 +1217,10 @@ object Form_Console: TForm_Console
           Left = 1
           Height = 87
           Top = 1
-          Width = 480
+          Width = 482
           Align = alTop
           ClientHeight = 87
-          ClientWidth = 480
+          ClientWidth = 482
           Color = 16767449
           ParentBackground = False
           ParentColor = False
@@ -1240,7 +1239,7 @@ object Form_Console: TForm_Console
           end
           object Edit_FDD_00_Description: TEdit
             Left = 48
-            Height = 28
+            Height = 23
             Top = 3
             Width = 330
             ParentFont = False
@@ -1248,9 +1247,9 @@ object Form_Console: TForm_Console
           end
           object Label_FDD: TLabel
             Left = 48
-            Height = 18
+            Height = 17
             Top = 25
-            Width = 41
+            Width = 39
             Caption = 'Image:'
             Font.CharSet = ANSI_CHARSET
             Font.Color = clBlack
@@ -1264,12 +1263,12 @@ object Form_Console: TForm_Console
         end
         object Panel_HDD: TPanel
           Left = 1
-          Height = 81
+          Height = 83
           Top = 88
-          Width = 480
+          Width = 482
           Align = alClient
-          ClientHeight = 81
-          ClientWidth = 480
+          ClientHeight = 83
+          ClientWidth = 482
           Color = 14019293
           ParentBackground = False
           ParentColor = False
@@ -1287,9 +1286,9 @@ object Form_Console: TForm_Console
           end
           object Label_HDD: TLabel
             Left = 48
-            Height = 18
+            Height = 17
             Top = 25
-            Width = 41
+            Width = 39
             Caption = 'Image:'
             Font.CharSet = ANSI_CHARSET
             Font.Color = clBlack
@@ -1302,7 +1301,7 @@ object Form_Console: TForm_Console
           end
           object Edit_HDD_00_Description: TEdit
             Left = 48
-            Height = 28
+            Height = 23
             Top = 3
             Width = 330
             ParentFont = False
@@ -1313,14 +1312,14 @@ object Form_Console: TForm_Console
     end
     object TabSheet_Settings: TTabSheet
       Caption = 'Einstellungen'
-      ClientHeight = 170
-      ClientWidth = 482
+      ClientHeight = 172
+      ClientWidth = 484
       ParentFont = False
       object Label3: TLabel
         Left = 16
-        Height = 18
+        Height = 16
         Top = 8
-        Width = 137
+        Width = 129
         Caption = 'Schriftgroesse Monitor'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
@@ -1333,7 +1332,7 @@ object Form_Console: TForm_Console
       end
       object ComboBox_FontSize: TComboBox
         Left = 16
-        Height = 30
+        Height = 24
         Top = 24
         Width = 184
         Font.CharSet = ANSI_CHARSET
@@ -1342,16 +1341,16 @@ object Form_Console: TForm_Console
         Font.Name = 'Tahoma'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        ItemHeight = 0
+        ItemHeight = 16
         ParentFont = False
         TabOrder = 0
         OnChange = ComboBox_FontSizeChange
       end
       object CheckBox_LOG_TERM: TCheckBox
         Left = 312
-        Height = 23
+        Height = 20
         Top = 72
-        Width = 107
+        Width = 91
         Caption = 'LOG_Monitor'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
@@ -1468,7 +1467,7 @@ object Form_Console: TForm_Console
       end
       object ComboBox_Font_Namen: TComboBox
         Left = 16
-        Height = 30
+        Height = 24
         Top = 128
         Width = 280
         Font.CharSet = ANSI_CHARSET
@@ -1477,15 +1476,15 @@ object Form_Console: TForm_Console
         Font.Name = 'Tahoma'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        ItemHeight = 0
+        ItemHeight = 16
         ParentFont = False
         TabOrder = 3
       end
       object Label6: TLabel
         Left = 16
-        Height = 18
+        Height = 16
         Top = 112
-        Width = 161
+        Width = 154
         Caption = 'Liste der installierten Fonts'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
@@ -1508,9 +1507,9 @@ object Form_Console: TForm_Console
       end
       object CheckBox_XOFF: TCheckBox
         Left = 312
-        Height = 23
+        Height = 20
         Top = 8
-        Width = 165
+        Width = 154
         Caption = 'sende XOFF nach Reset'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlack
@@ -1524,31 +1523,31 @@ object Form_Console: TForm_Console
     end
     object TabSheet_Language: TTabSheet
       Caption = 'Sprache'
-      ClientHeight = 170
-      ClientWidth = 482
+      ClientHeight = 172
+      ClientWidth = 484
       object CheckBox_lang_en: TCheckBox
         Left = 32
-        Height = 23
+        Height = 19
         Top = 80
-        Width = 75
+        Width = 62
         Caption = 'Englisch'
         TabOrder = 0
         OnChange = CheckBox_lang_enChange
       end
       object CheckBox_lang_de: TCheckBox
         Left = 32
-        Height = 23
+        Height = 19
         Top = 48
-        Width = 75
+        Width = 61
         Caption = 'Deutsch'
         TabOrder = 1
         OnChange = CheckBox_lang_deChange
       end
       object Label5: TLabel
         Left = 16
-        Height = 22
+        Height = 25
         Top = 8
-        Width = 186
+        Width = 185
         Caption = 'Auswahl der Sprache'
         Font.CharSet = ANSI_CHARSET
         Font.Height = -19
@@ -1560,13 +1559,13 @@ object Form_Console: TForm_Console
     end
     object TabSheet_Debug: TTabSheet
       Caption = 'Debug'
-      ClientHeight = 170
-      ClientWidth = 482
+      ClientHeight = 172
+      ClientWidth = 484
       object CheckBox_LOG_CONIN: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 8
-        Width = 95
+        Width = 82
         Caption = 'LOG CONIN'
         ParentFont = False
         TabOrder = 0
@@ -1574,9 +1573,9 @@ object Form_Console: TForm_Console
       end
       object CheckBox_LOG_CONOUT: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 32
-        Width = 108
+        Width = 94
         Caption = 'LOG CONOUT'
         ParentFont = False
         TabOrder = 1
@@ -1584,9 +1583,9 @@ object Form_Console: TForm_Console
       end
       object CheckBox_LOG_READ: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 56
-        Width = 88
+        Width = 73
         Caption = 'LOG READ'
         ParentFont = False
         TabOrder = 2
@@ -1594,9 +1593,9 @@ object Form_Console: TForm_Console
       end
       object CheckBox_LOG_WRITE: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 80
-        Width = 91
+        Width = 78
         Caption = 'LOG WRITE'
         ParentFont = False
         TabOrder = 3
@@ -1604,18 +1603,18 @@ object Form_Console: TForm_Console
       end
       object CheckBox_LOG_DEBUG: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 104
-        Width = 96
+        Width = 81
         Caption = 'LOG DEBUG'
         ParentFont = False
         TabOrder = 4
       end
       object CheckBox_LOG_MOUSE: TCheckBox
         Left = 16
-        Height = 23
+        Height = 19
         Top = 128
-        Width = 99
+        Width = 84
         Caption = 'LOG MOUSE'
         TabOrder = 5
       end
@@ -1647,7 +1646,6 @@ object Form_Console: TForm_Console
     SynSer.ConvertLineEnd = False
     SynSer.AtTimeout = 1000
     SynSer.InterPacketTimeout = True
-    SynSer.NonBlock = False
     Device = 'COM1'
     RcvLineCRLF = False
     OnRxData = LazSerial1RxData
