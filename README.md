@@ -1,7 +1,7 @@
 # i-meic
 
 **The i-meic is a modularly expandable single-board computer based on the
-Intel 8086 CPU.**
+Intel 8088 CPU.**
 
 > The entire processing core consists of nothing more than the CPU and the
 > main memory. All input/output is handled by a Raspberry Pi Pico (RP2040) –
@@ -17,7 +17,7 @@ The name is derived from the German description of the project:
 
 | Letter | Meaning (German) | English |
 |--------|------------------|---------|
-| **i** | **i**ntel 8086 | Intel 8086 |
+| **i** | **i**ntel 8088 | Intel 8088 |
 | **m** | **m**odularer | modular |
 | **e** | **e**rweiterbarer | expandable |
 | **i** | e**i**nplatinen | single-board |
@@ -27,20 +27,20 @@ The name is derived from the German description of the project:
 
 ## Concept in brief
 
-Classic 8086 systems require a large number of peripheral chips (clock
+Classic 8088 systems require a large number of peripheral chips (clock
 generator, bus drivers, interrupt controller, DMA, floppy/HDD controller,
 video, keyboard, etc.). The i-meic replaces this entire periphery with **a
 single microcontroller**: the Raspberry Pi Pico.
 
 **The processing core consists solely of:**
 
-- **1× Intel 8086 CPU** (16-bit, 20 address lines)
-- **2× 512 KByte SRAM** → together **1 MByte** (the maximum of the 8086
+- **1× Intel 8088 CPU** (16-bit, 20 address lines)
+- **2× 512 KByte SRAM** → together **1 MByte** (the maximum of the 8088
   address space)
 
 **The Raspberry Pi Pico (RP2040, ARM Cortex-M0+) handles:**
 
-- **clock generation** for the 8086 CPU (single-step / clocked operation)
+- **clock generation** for the 8088 CPU (single-step / clocked operation)
 - **loading the BIOS** into the SRAM at startup
 - the **complete I/O processing** (every read/write access to an I/O port is
   intercepted and serviced by the Pico)
@@ -49,7 +49,7 @@ single microcontroller**: the Raspberry Pi Pico.
 - the **ITP3 expansion bus** for modular expansion (device select DS0–DS3)
 
 This architecture is unusually capable because the Pico runs at a much higher
-clock rate than the historic 8086 periphery and can therefore process I/O
+clock rate than the historic 8088 periphery and can therefore process I/O
 operations very quickly.
 
 ---
@@ -60,10 +60,10 @@ This is how source code becomes a working DOS computer:
 
 ```
    ┌────────────────────────────────────────────────────────────────┐
-   │  70_RON-BIOS-NASM …  BIOS.ASM  (8086 assembly, NASM)            │
+   │  70_RON-BIOS-NASM …  BIOS.ASM  (8088 assembly, NASM)            │
    │        │  nasm -f bin                                           │
    │        ▼                                                        │
-   │     BIOS.BIN  (pure 8086 binary BIOS, segment F800:0000)        │
+   │     BIOS.BIN  (pure 8088 binary BIOS, segment F800:0000)        │
    │        │  COM2INC  (see 60_FPC_Lazarus/25_LAZ_CLI64_COM2INC)    │
    │        ▼                                                        │
    │     BIOS.INC  (Pascal byte array  BIOS_ARR[…])                  │
@@ -78,11 +78,11 @@ This is how source code becomes a working DOS computer:
    └────────┬───────────────────────────────────────────────────────┘
             │  Pico boots:
             │  1. loads BIOS_ARR into the SRAM (F800:0000)
-            │  2. clocks the 8086 CPU
+            │  2. clocks the 8088 CPU
             │  3. services all I/O requests (IORQ)
             ▼
    ┌────────────────────────────────────────────────────────────────┐
-   │  i-meic board  (8086 + 2×512 KB SRAM)  ←── serial ───┐          │
+   │  i-meic board  (8088 + 2×512 KB SRAM)  ←── serial ───┐          │
    └──────────────────────────────────────────────────────┼─────────┘
                                                            │ UART 921600 Bd
    ┌───────────────────────────────────────────────────────▼────────┐
@@ -104,7 +104,7 @@ This is how source code becomes a working DOS computer:
 | [`60_FPC_Lazarus/`](60_FPC_Lazarus/) | Host-PC tools (Free Pascal / Lazarus) for Windows & Linux |
 | [`60_FPC_Lazarus/20_LAZ_Console64_GUI64_Win64_Linux/`](60_FPC_Lazarus/20_LAZ_Console64_GUI64_Win64_Linux/) | **CONSOLE64** – terminal/console program for all i-meic (central tool) |
 | [`60_FPC_Lazarus/25_LAZ_CLI64_COM2INC/`](60_FPC_Lazarus/25_LAZ_CLI64_COM2INC/) | **COM2INC** – command-line tool that converts a binary file into a Pascal/NASM include (byte array) |
-| [`70_RON-BIOS-NASM_i-meic_WIN_Linux/`](70_RON-BIOS-NASM_i-meic_WIN_Linux/) | **RON-BIOS** – the 8086 BIOS in NASM assembly incl. build scripts |
+| [`70_RON-BIOS-NASM_i-meic_WIN_Linux/`](70_RON-BIOS-NASM_i-meic_WIN_Linux/) | **RON-BIOS** – the 8088 BIOS in NASM assembly incl. build scripts |
 
 > **Note on the numbering:** The prefixes `10_`, `60_`, `70_` deliberately
 > leave gaps for further modules and variants (e.g. other consoles, other
@@ -138,7 +138,7 @@ COM port and 921600 baud, then power up the i-meic.
 
 ## Requirements
 
-- **Hardware:** Intel 8086, 2× SRAM (512 KByte), Raspberry Pi Pico or
+- **Hardware:** Intel 8088, 2× SRAM (512 KByte), Raspberry Pi Pico or
   compatible RP2040 module (footprints for several variants are provided),
   serial connection to the host
 - **Software (development):**
@@ -161,7 +161,7 @@ COM port and 921600 baud, then power up the i-meic.
   ⚠️ The libraries shipped in the `units/` folder have been **modified and
   adapted** for this project and must **not** be replaced with the current
   upstream version (otherwise compilation errors will occur).
-- **NASM** is used to assemble the 8086 BIOS (see `LICENSE_NASM.TXT`).
+- **NASM** is used to assemble the 8088 BIOS (see `LICENSE_NASM.TXT`).
 
 ---
 
@@ -183,5 +183,5 @@ TODO (to be filled in by the author):
 - author / contact / project website
 - bill of materials (BOM) for assembly
 - photo of the assembled board
-- exact pin mapping Pico ↔ 8086 ↔ SRAM
+- exact pin mapping Pico ↔ 8088 ↔ SRAM
 -->
