@@ -16,12 +16,12 @@
 
 The name is derived from the German description of the project:
 
-| Letter | Meaning (German → English) |
+| Letter | Meaning  |
 |--------|-----------|
 | **i** | (**i**)ntel 8088 |
-| **m** | (**m**)odular — *modularer* |
-| **e** | (**e**)xpandable — *erweiterbarer* |
-| **i** | s(**i**)ngle-board — *e(**i**)nplatinen* |
+| **m** | (**m**)odular|
+| **e** | (**e**)xpandable |
+| **i** | s(**i**)ngle-board |
 | **c** | (**c**)omputer |
 
 ---
