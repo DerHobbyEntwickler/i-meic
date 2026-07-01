@@ -170,4 +170,18 @@ Dieses Projekt steht unter der **GNU General Public License v3.0** – siehe
 [`LICENSE`](LICENSE). Das BIOS und COM2INC enthalten zusätzlich die
 NASM-Lizenz (`LICENSE_NASM.TXT`) für die mitgelieferten NASM-Binaries.
 
+---
 
+## Sprache der Dokumentation
+
+Diese README-Dateien sind zunächst auf **Deutsch** verfasst. Eine englische
+Übersetzung ist geplant; die deutschen Fassungen werden dann z. B. als
+`README_de.md` abgelegt.
+
+<!--
+TODO (vom Autor zu ergänzen):
+- Autor / Kontakt / Projekt-Webseite
+- Stückliste (BOM) zur Bestückung
+- Foto des aufgebauten Boards
+- genaue Pinbelegung Pico ↔ 8088 ↔ SRAM
+-->
